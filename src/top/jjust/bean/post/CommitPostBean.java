@@ -3,13 +3,14 @@ package top.jjust.bean.post;
 import top.jjust.bean.post.BasePostBean;
 
 public class CommitPostBean extends BasePostBean {
-	private BasePostBean parent;//当前帖子的父类
+	private long parentPostID;//当前帖子的父类
 
-	public BasePostBean getParent() {
-		return parent;
+	public long getParentPostID() {
+		return parentPostID;
 	}
 
-	public void setParent(BasePostBean parent) {
-		this.parent = parent;
+	public void setParentPostID(long parentPostID) {
+		this.parentPostID = parentPostID;
 	}
+	
 }
